@@ -27,6 +27,7 @@ gem 'simple_form'
 gem "awesome_print", require:"ap"
 
 gem 'bower-rails'
+gem "foreman"
 
 group :development, :test do
   gem 'spring'
@@ -57,4 +58,6 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'unicorn',        '4.8.3'
+  gem "rails_stdout_logging"
+  gem "rails_serve_static_assets"
 end
